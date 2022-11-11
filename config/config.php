@@ -1,0 +1,4 @@
+<?php
+
+define('TOKEN', '5728337559:AAGCWHgVqrW_5nfaNHEfE2LGbVKGOVBGtec');
+define('CHAT_ID', '5783929736');

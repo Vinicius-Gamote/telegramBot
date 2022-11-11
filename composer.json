@@ -1,0 +1,16 @@
+{
+    "name": "gamote/gamotera-bot",
+    "description": "College project",
+    "license": "mit",
+    "require": {
+        "telegram-bot/api": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app/"
+        },
+        "files" : [
+            "config/config.php"
+        ]
+    }
+}
