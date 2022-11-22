@@ -2,13 +2,10 @@
 
 namespace app;
 
-use TelegramBot\Api\BotApi;
-
 class ApiController
 {
-    public static function getChatId(string $token) : ?string 
+    public static function getChatId(string $token): ?string 
     {
-        $chatId = null;
         $chatIdEndpoint = "https://api.telegram.org/bot{$token}/getUpdates";
         $content = file_get_contents($chatIdEndpoint);
 
@@ -22,18 +19,21 @@ class ApiController
             return null;
         }
 
-        return $chatId;
+        return $arr['result'][0]['message']['chat']['id'];
     }
 
-    public static function sendMessage() : bool
+    public static function sendMessage(string $message): bool
     {
         try 
         {
+            $bot = new \TelegramBot\Api\BotApi(TOKEN);
 
+            $bot->sendMessage(CHAT_ID, $message);
+
+            return true;
         } catch (\Exception $ex) 
         {
             return false;
         }
-
     }
 }
