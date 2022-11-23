@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56925bac5c1b27ec2f3939edd0ef16a2",
+    "content-hash": "32ff813477d6349dc9444eeda6988a0e",
     "packages": [
         {
             "name": "telegram-bot/api",

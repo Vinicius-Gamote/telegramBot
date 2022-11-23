@@ -1,16 +1,11 @@
 {
-    "name": "gamote/gamotera-bot",
-    "description": "College project",
-    "license": "mit",
-    "require": {
-        "telegram-bot/api": "^2.3"
-    },
+    "name": "meroba-logo/meroba-logo-bot",
     "autoload": {
         "psr-4": {
             "app\\" : "app/"
-        },
-        "files" : [
-            "config/config.php"
-        ]
+        }
+    },
+    "require": {
+        "telegram-bot/api": "^2.3"
     }
 }

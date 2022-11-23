@@ -1,8 +1,10 @@
 <?php
 
-require_once('vendor/autoload.php');
+use \app\ApiController;
+
+require __DIR__.'/vendor/autoload.php';
 
 // $chatId = \app\ApiController::getChatId(TOKEN);
 // echo $chatId;
 
-\app\ApiController::sendMessage("Hello Telegram!");
+ApiController::sendMessage('Hello Telegram!');

@@ -70,6 +70,8 @@ class Botan
             ],
             CURLOPT_POSTFIELDS => $message->toJson(),
             CURLOPT_TIMEOUT => 5,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_SSL_VERIFYHOST => false,
         ];
 
         curl_setopt_array($this->curl, $options);

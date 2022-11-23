@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'gamote/gamotera-bot',
+        'name' => 'meroba-logo/meroba-logo-bot',
         'pretty_version' => '1.0.0+no-version-set',
         'version' => '1.0.0.0',
         'reference' => NULL,
@@ -10,7 +10,7 @@
         'dev' => true,
     ),
     'versions' => array(
-        'gamote/gamotera-bot' => array(
+        'meroba-logo/meroba-logo-bot' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
             'reference' => NULL,
