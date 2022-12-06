@@ -7,9 +7,6 @@ use TelegramBot\Api\BotApi;
 class ApiController
 {
 
-    const TOKEN = '5887391770:AAGl5PelXlryK0M7Hd8KVKSRnpvsTf0xr90';
-    const CHAT_ID = 5783929736;
-
     public static function getChatId(string $token): ?string 
     {
         $chatIdEndpoint = "https://api.telegram.org/bot{$token}/getUpdates";
@@ -56,16 +53,13 @@ class ApiController
             $app = new ApiController();
 
             $app->sendMessage($message);
-        } else {
-            echo "Mensagem não faz referência a cep!";
         }
-
     }
 
     public static function sendMessage($message)
     {
-        $bot = new BotApi(self::TOKEN);
+        $bot = new BotApi(TOKEN);
 
-        return $bot->sendMessage(self::CHAT_ID, $message);
+        return $bot->sendMessage(CHAT_ID, $message);
     }
 }
