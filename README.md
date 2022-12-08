@@ -21,7 +21,7 @@ composer require telegram-bot/api (o composer ira baixar as dependências do tel
 Para mais detalhes, https://packagist.org/packages/telegram-bot/api).
 
 Feito isso, o método sendMessage será responsável por enviar/responder suas mensagens ao bot.
-Você pode inserir, dentro da pasta config, o arquivo config.php, o seu token e o seu chat_id, para que o projeto responda/envie as mensagens para o seu próprio bot.
+Você pode inserir, dentro da pasta config, o arquivo config.php, o seu token e o seu chat_id, para que o projeto responda/envie as mensagens para o seu próprio bot, e para rodar a aplicação de maneira local, basta digitar o comando em seu terminal: php -S localhost:8000 (utilizei a porta 8000 neste caso), e inserir este caminho em seu navegador
 
 ## Funcionamento
 
@@ -31,5 +31,5 @@ Segue documentações:</br>
 https://developers.themoviedb.org/3/getting-started/introduction</br>
 https://viacep.com.br/
 
-Ao executar o código, uma mensagem de boas vindas sera enviada pelo bot, e, caso digite um CEP para o bot, e em nossa aplicação, enviarmos uma resposta, ele ira fazer uma busca no ViaCEP, e retornara dados do logradouro e cidade.
+Ao executar a aplicação, uma mensagem de boas vindas sera enviada pelo bot, e, caso digite um CEP para o bot, e em nossa aplicação, enviarmos uma resposta, ele ira fazer uma busca no ViaCEP, e retornara dados do logradouro e cidade.
 Caso digite o nome de um filme em inglês, ele ira fazer uma requisição ao moviedb e irá retiornar o título, junto a sinopse do filme.
