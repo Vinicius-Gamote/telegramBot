@@ -25,8 +25,8 @@ Você pode inserir, dentro da pasta config, o arquivo config.php, o seu token e 
 ## Funcionamento
 
 O projeto possui 2 integrações com api´s públicas: MovieDb (fornece informações sobre filmes), e ViaCEP (consultas por CEP).
-Segue documentações
-https://developers.themoviedb.org/3/getting-started/introduction
+Segue documentações:</br>
+https://developers.themoviedb.org/3/getting-started/introduction</br>
 https://viacep.com.br/
 
 Ao executar o código, uma mensagem de boas vindas sera enviada pelo bot, e, caso digite um CEP para o bot, e em nossa aplicação, enviarmos uma resposta, ele ira fazer uma busca no ViaCEP, e retornara dados do logradouro e cidade.
