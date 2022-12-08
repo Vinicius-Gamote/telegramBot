@@ -2,15 +2,15 @@
 
 use \app\ApiController;
 
+require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/config/config.php';
+
 $message = filter_input(INPUT_GET, 'm', FILTER_UNSAFE_RAW);
 
-if ($message)
-{
-    require __DIR__.'/vendor/autoload.php';
-    require __DIR__.'/config/config.php';
-    
-    ApiController::getChatCep(TOKEN);
+ApiController::getTypeMessage(TOKEN, MOVIE_API_KEY);
 
+if ($message)
+{  
     if(ApiController::sendMessage($message))
     {
         jsonResponse('Mensagem não enviada, erro interno!', -1, 500);

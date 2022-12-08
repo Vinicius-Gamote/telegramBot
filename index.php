@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+    use \app\ApiController;
+
+    require __DIR__.'/vendor/autoload.php';
+    require __DIR__.'/config/config.php';
+
+    $welcomeMessage = 'Olá! Digite um CEP para consulta, ou o nome de um filme em inglês!';
+
+    ApiController::sendMessage($welcomeMessage); 
+    ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +21,9 @@
 <body>
     <div class="max-width box">
         <h1>ChatBot Telegram</h1>
-        <textarea class="form-control" placeholder="insira sua mensagem" id="txtMessage"></textarea>
+        <textarea class="form-control" placeholder="Se preferir, envie uma mensagem personalizada" id="txtMessage"></textarea>
 
-        <button type="button" class="btn btn-success w-100" id="btnSend">Send</button>
+        <button type="button" class="btn btn-success w-100" id="btnAnswer">Answer</button>
     </div>
 
 <script src="script.js"></script>
