@@ -15,7 +15,7 @@ Uma vez feito, o telegram lhe dará um token de acesso para requisições http. 
 Com ele em mãos, faça uma chamada get pelo navegador, utilizando o endpoint https://api.telegram.org/bot<<seu_token>>/getUpdates e guarde seu chat_id (lembrando que para o chat_id aparecer, é necessario ter enviado uma mensagem para seu bot).</br>
 Feito isso, bastou criar uma api php com essa chamada, para que tenhamos os dados da conversa.
 
-Com a chamada criada, instale o gerenciador de dependências composer: https://getcomposer.org/doc/00-intro.md
+Com a chamada criada, instale o gerenciador de dependências composer: https://getcomposer.org/doc/00-intro.md.</br>
 Instalado, abra o terminal e rode o seguinte comando:
 composer require telegram-bot/api (o composer ira baixar as dependências do telegram ao seu projeto.</br>
 Para mais detalhes, https://packagist.org/packages/telegram-bot/api).
@@ -27,6 +27,7 @@ Você pode inserir, dentro da pasta config, o arquivo config.php, o seu token e 
 
 O projeto possui 2 integrações com api´s públicas: MovieDb (fornece informações sobre filmes), e ViaCEP (consultas por CEP).
 Segue documentações:</br>
+
 https://developers.themoviedb.org/3/getting-started/introduction</br>
 https://viacep.com.br/
 
